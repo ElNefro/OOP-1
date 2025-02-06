@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 class Integer
 {
@@ -47,19 +47,86 @@ public:
         return !sign;
     }
     //Перегрузки операторов
-    Integer operator+(Integer other)const
+    friend Integer operator+(const Integer a, const Integer b)
     {
         return Integer();
     }
-    friend Integer operator*(Integer a, Integer b)
+    friend Integer operator*(const Integer a, const Integer b)
     {
         return Integer();
     }
-
+    friend Integer operator-(const Integer a, const Integer b)
+    {
+        return Integer();
+    }
+    friend Integer operator/(const Integer a, const Integer b)
+    {
+        return Integer();
+    }
+    friend Integer operator%(const Integer a, const Integer b)
+    {
+        return Integer();
+    }
+    friend Integer operator++( Integer a)
+    {
+        return Integer();
+    }
+    friend Integer operator--(Integer a)
+    {
+        return Integer();
+    }
+    friend Integer operator==(const Integer a, const Integer b)
+    {
+        return true;
+    }
+    friend Integer operator!=(const Integer a, const Integer b)
+    {
+        return true;
+    }
+    friend Integer operator>(const Integer a, const Integer b)
+    {
+        return true;
+    }
+    friend Integer operator<(const Integer a, const Integer b)
+    {
+        return true;
+    }
+    friend Integer operator>=(const Integer a, const Integer b)
+    {
+        return true;
+    }
+    friend Integer operator<=(const Integer a, const Integer b)
+    {
+        return true;
+    }
 private:
     
     bool sign;
     unsigned units;
+};
+
+
+
+
+
+
+
+
+
+class rational {
+
+};
+
+class real {
+
+};
+
+class point2d {
+
+};
+
+class segment {
+
 };
 
 int main()
