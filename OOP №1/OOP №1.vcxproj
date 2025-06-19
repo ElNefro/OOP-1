@@ -127,7 +127,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Integer.cpp" />
     <ClCompile Include="OOP №1.cpp" />
+    <ClCompile Include="point2d.cpp" />
+    <ClCompile Include="rational.cpp" />
+    <ClCompile Include="real.cpp" />
+    <ClCompile Include="segment.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Integer.h" />
+    <ClInclude Include="point2d.h" />
+    <ClInclude Include="rational.h" />
+    <ClInclude Include="real.h" />
+    <ClInclude Include="segment.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
